@@ -15,6 +15,8 @@ public class ProductDTO implements Serializable {
 	private String image_Uri;
 	
 	
+	public ProductDTO() {}
+	
 	public ProductDTO(Long id, String name, Double price, String description, String image_Uri) {
 		this.id = id;
 		this.name = name;

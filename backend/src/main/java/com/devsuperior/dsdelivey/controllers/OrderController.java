@@ -17,12 +17,12 @@ public class OrderController {
 
 	
 	@Autowired
-	private OrderService orderService;
+	private OrderService service;
 	
 	
 	@GetMapping
 	public ResponseEntity<List<OrderDTO>> findAll(){
-	List<OrderDTO> list = orderService.findAll(); //Usando Metodo já criado antes de retorno
+	List<OrderDTO> list = service.findAll(); //Usando Metodo já criado antes de retorno
 	return ResponseEntity.ok().body(list); //Retornando Metodo HTTP
 
 	}
